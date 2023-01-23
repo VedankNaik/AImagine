@@ -37,6 +37,7 @@ const CreatePost = () => {
             },
             body: JSON.stringify({
               prompt: form.prompt,
+              apikey: form.apiKey,
             }),
           }
         );
@@ -103,6 +104,35 @@ const CreatePost = () => {
             value={form.name}
             handleChange={handleChange}
           />
+
+          <FormField
+            labelName="OPENAI API Key"
+            type="text"
+            name="apiKey"
+            placeholder="API Key"
+            value={form.apiKey}
+            handleChange={handleChange}
+          />
+          <div>
+            <p className="text-white text-[12px]">
+              Note:{" "}
+              <a
+                className="text-[#b39de2]"
+                href="https://beta.openai.com/overview"
+              >
+                OPENAI
+              </a>{" "}
+              provides limited usage for free. Create your account and generate
+              your own api key for this app{" "}
+              <a
+                className="text-[#b39de2]"
+                href="https://beta.openai.com/account/api-keys"
+              >
+                here
+              </a>
+              .
+            </p>
+          </div>
 
           <FormField
             labelName="Prompt"
