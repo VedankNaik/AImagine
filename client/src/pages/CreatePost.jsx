@@ -86,8 +86,8 @@ const CreatePost = () => {
   return (
     <section className="max-w-7xl mx-auto">
       <div>
-        <h1 className="font-extrabold text-[#222328] text-[32px]">Create</h1>
-        <p className="mt-2 text-[#666e75] text-[14px] max-w-[500px]">
+        <h1 className="font-extrabold text-white text-[32px]">Create</h1>
+        <p className="mt-2 text-white text-[14px] max-w-[500px]">
           Generate an imaginative image through DALL-E AI and share it with the
           community
         </p>
@@ -115,7 +115,7 @@ const CreatePost = () => {
             handleSurpriseMe={handleSurpriseMe}
           />
 
-          <div className="relative bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-64 p-3 h-64 flex justify-center items-center">
+          <div className="relative bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-64 p-3 h-64 flex justify-center items-center">
             {form.photo ? (
               <img
                 src={form.photo}
@@ -149,7 +149,7 @@ const CreatePost = () => {
         </div>
 
         <div className="mt-10">
-          <p className="mt-2 text-[#666e75] text-[14px]">
+          <p className="mt-2 text-white text-[14px]">
             ** Once you have created the image you want, you can share it with
             others in the community **
           </p>
